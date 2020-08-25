@@ -12,5 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Change Activity"/>
+    <ImageView
+        android:id="@+id/main_IviewToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="imgGotClicked"
+        android:layout_weight="1"/>
 
 </LinearLayout>
