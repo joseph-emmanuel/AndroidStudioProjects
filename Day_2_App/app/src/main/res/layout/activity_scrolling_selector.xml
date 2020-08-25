@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:id="@+id/mainImage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
@@ -26,30 +27,59 @@
             >
 
             <ImageView
+                android:id="@+id/imageOne"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:src="@drawable/dog"
+                android:src="@drawable/a1"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
+                android:id="@+id/imageTwo"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:src="@drawable/dog1"
+                android:src="@drawable/a2"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
+                android:id="@+id/imageThree"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:src="@drawable/dog2"
+                android:src="@drawable/a3"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
-
+            <ImageView
+                android:id="@+id/imageFour"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/a4"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+            <ImageView
+                android:id="@+id/imageFive"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/a5"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+            <ImageView
+                android:id="@+id/imageSix"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/a6"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
         </LinearLayout>
     </HorizontalScrollView>
 

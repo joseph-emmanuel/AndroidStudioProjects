@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Email extends AppCompatActivity {
+public class    Email extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

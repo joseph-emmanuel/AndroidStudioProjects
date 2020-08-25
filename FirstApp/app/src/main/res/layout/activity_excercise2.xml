@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="fill"
         android:textSize="100sp"
-        android:gravity="right"
+
         android:text="0" />
 
     <GridLayout
