@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Day_3</string>
+    <string name="happy">Hello</string>
+    <string name="alert">Alert</string>
+    <string name="dialogue">Dialog</string>
+
+</resources>
