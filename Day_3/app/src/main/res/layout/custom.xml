@@ -5,15 +5,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <EditText
-        android:id="@+id/fname"
+        android:id="@+id/nameCusom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First Name"/>
-    <EditText
-        android:id="@+id/lname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name"/>
-
-
 </LinearLayout>

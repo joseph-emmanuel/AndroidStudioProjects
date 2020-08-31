@@ -3,7 +3,7 @@
 
         <string name="app_name">Day_3</string>
         <string name="happy">Bonjour</string>
-        <string name="alert">Alerte</string>
-        <string name="dialogue">Dialogue</string>
+        <string name="backgroundColor">Couleur de larrière plan</string>
+        <string name="changeName">Changer de nom</string>
 
 </resources>

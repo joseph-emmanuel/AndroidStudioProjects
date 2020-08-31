@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,8 +14,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
 
@@ -45,13 +50,25 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.menu_alert:
                 AlertDialog.Builder builder=new AlertDialog.Builder(this);
-                final String[] myArray=getResources().getStringArray(R.array.myarray);
-                builder.setTitle("Pop-Up");
+                final String[] myArray=getResources().getStringArray(R.array.colorArray);
+                builder.setTitle("Change Color");
                 final String[] values={"A","B","C"};
                 builder.setItems(myArray, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int pos) {
-                        Log.e("/", "onClick: happend for array : "+myArray[pos] );
+                        LinearLayout bgElement = (LinearLayout) findViewById(R.id.mainLayout);
+                        switch(pos){
+                            case 0:
+                                bgElement.setBackgroundColor(Color.YELLOW);
+                                break;
+
+                            case 1:
+                                bgElement.setBackgroundColor(Color.RED);
+                                break;
+                            case 2:
+                                bgElement.setBackgroundColor(Color.GREEN);
+                                break;
+                        }
                     }
                 });
                 builder.create()
@@ -66,11 +83,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                        AlertDialog cusomView= (AlertDialog)dialog;
-                        EditText firstName=cusomView.findViewById(R.id.fname);
-                        EditText lastName=cusomView.findViewById(R.id.lname);
-                        Log.e("", "First Name: "+firstName.getText());
-                        Log.e("", " Last Name : "+lastName.getText() );
-
+                        EditText firstName=(EditText) cusomView.findViewById(R.id.nameCusom);
+                        Log.e("/", firstName.getText().toString() );
+                      TextView textView=(TextView) findViewById(R.id.nameTextView);
+                      textView.setText(firstName.getText().toString());
                     }
                 });
                 dialogBuilder.setNegativeButton("Refuce", new DialogInterface.OnClickListener() {
