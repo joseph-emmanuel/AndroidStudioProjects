@@ -14,13 +14,13 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class Myadpater extends RecyclerView.Adapter<Myadpater.MyViewHolder> {
-    String data1[],data2[];
-    int images[];
+    String data1[];
+    int images[],icons[];
     Context context;
-    public Myadpater(Context ct,String s1[],String s2[],int img[]){
+    public Myadpater(Context ct,String s1[],int ico[],int img[]){
         context=ct;
         data1=s1;
-        data2=s2;
+        icons=ico;
         images=img;
 
     }
@@ -36,14 +36,14 @@ public class Myadpater extends RecyclerView.Adapter<Myadpater.MyViewHolder> {
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
 
         holder.myText1.setText(data1[position]);
-        holder.myText2.setText(data2[position]);
+        holder.myIcon.setImageResource(icons[position]);
         holder.myImage.setImageResource(images[position ]);
 
         holder.myImage.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
-                Log.e("/", holder.myText1.getText().toString() );
+
                 holder.myImage.setImageResource(R.drawable.google);
             }
         });
@@ -55,15 +55,15 @@ public class Myadpater extends RecyclerView.Adapter<Myadpater.MyViewHolder> {
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView myText1,myText2;
-        ImageView myImage;
+        TextView myText1;
+        ImageView myImage,myIcon;
         ConstraintLayout mainLayout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            myText1=itemView.findViewById(R.id.myText1);
-            myText2=itemView.findViewById(R.id.myText2);
-            myImage=itemView.findViewById(R.id.myImageView);
-            mainLayout=itemView.findViewById(R.id.mainLayout);
+            myText1=itemView.findViewById(R.id.like);
+            myIcon=itemView.findViewById(R.id.heartblank);
+            myImage=itemView.findViewById(R.id.customRecycler_image);
+            mainLayout=itemView.findViewById(R.id.recyclerView);
         }
     }
 }

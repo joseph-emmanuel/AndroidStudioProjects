@@ -8,8 +8,9 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
-    String s1[],s2[];
-    int images[]={R.drawable.csharp,R.drawable.java,R.drawable.js,R.drawable.php,R.drawable.python,R.drawable.r,R.drawable.ruby,R.drawable.sql,R.drawable.swift,R.drawable.swift};
+    String s1[];
+    int images[]={R.drawable.dog,R.drawable.cat,R.drawable.dog,R.drawable.cat,R.drawable.dog,R.drawable.cat,R.drawable.dog,R.drawable.cat,R.drawable.dog,R.drawable.cat};
+    int icons[]={R.drawable.likeblank,R.drawable.likered,R.drawable.likered,R.drawable.likeblank,R.drawable.likered,R.drawable.likeblank,R.drawable.likered,R.drawable.likered,R.drawable.likeblank,R.drawable.likered};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,9 +19,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView=findViewById(R.id.recyclerView);
 
         s1=getResources().getStringArray(R.array.programming_languages);
-        s2=getResources().getStringArray(R.array.description);
 
-        Myadpater myadpater=new Myadpater(this,s1,s2,images);
+        Myadpater myadpater=new Myadpater(this,s1,icons,images);
         recyclerView.setAdapter(myadpater);
         recyclerView.setLayoutManager((new LinearLayoutManager(this)));
     }

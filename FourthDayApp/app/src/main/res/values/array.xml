@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="names">
+        <item>Rohit</item>
+        <item>Kirandeep</item>
+        <item>Joseph</item>
+        <item>Naman</item>
+    </array>
+</resources>

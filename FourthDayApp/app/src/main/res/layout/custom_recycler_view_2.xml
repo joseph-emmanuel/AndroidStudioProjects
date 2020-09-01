@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/heartblank"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/likeblank"
+               android:adjustViewBounds="true"
+               android:maxWidth="42dp"
+               android:maxHeight="42dp"
+               android:scaleType="fitCenter"
+               android:layout_marginLeft="3dp"
+               />
+           <TextView
+               android:id="@+id/customRecycler_lastName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:textSize="30dp"
+               />
+
+       </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/customRecycler_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/dog"
+        />
+</LinearLayout>
