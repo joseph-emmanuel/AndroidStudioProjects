@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 public class Calculator_2 extends AppCompatActivity {
 
-
+    boolean xx;
+    float op1=0,op2=0,answer=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +41,55 @@ public class Calculator_2 extends AppCompatActivity {
         textView.setText("");
 
     }
+    public void opGotclicked(View v){
+        Button btn = (Button)v;
+        TextView textView=(TextView) findViewById(R.id.MainTextView);
+        String buttonText = btn.getText().toString();
+        op1=Float.parseFloat(textView.getText().toString());
+        Log.e("TAG", "opGotclicked: "+buttonText );
+        textView.setText("");
+        if(buttonText!="+")
+            xx=true;
+        else
+            xx=false;
+        Log.e("TAG", "value of xx : "+xx);
 
+    }
+    public void equalGotClicked(View v) {
+        TextView textView = (TextView) findViewById(R.id.MainTextView);
+        Log.w("TAG", textView.getText().toString());
+        String oper2=textView.getText().toString();
+
+        if (xx == true) {
+            answer = op1 - Float.parseFloat(oper2);
+        } else
+            answer = op1 + op2;
+
+        textView.setText(String.valueOf(answer));
+    }
+
+    public static String fmt(double d)
+    {
+        if(d == (long) d)
+            return String.format("%d",(long)d);
+        else
+            return String.format("%s",d);
+    }
+//public float answer(float a){
+//
+//    op2=a;
+//    if(op1!=0||op2!=0){
+//        Log.e("TAG", "equalGotClicked: hhahahahahhah");
+//    }
+//    else{
+//
+//        if(xx==true){
+//            answer=op1-op2;
+//        }
+//        else
+//            answer=op1+op2;
+//
+//    }
+//    return  answer;
+//}
 }

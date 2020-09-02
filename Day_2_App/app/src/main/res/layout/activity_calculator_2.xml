@@ -23,6 +23,8 @@
     <Button
         android:id="@+id/btn7"
         android:text="7"
+        android:hint="7"
+
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -32,6 +34,8 @@
     <Button
         android:id="@+id/btn8"
         android:text="8"
+        android:hint="8"
+
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -41,6 +45,7 @@
     <Button
         android:id="@+id/btn9"
         android:text="9"
+        android:hint="9"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -59,6 +64,8 @@
     <Button
         android:id="@+id/btn4"
         android:text="4"
+
+        android:hint="4"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -68,6 +75,7 @@
     <Button
         android:id="@+id/btn5"
         android:text="5"
+        android:hint="5"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -77,6 +85,7 @@
     <Button
         android:id="@+id/btn6"
         android:text="6"
+        android:hint="6"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -86,16 +95,18 @@
     <Button
         android:id="@+id/btnplus"
         android:text="+"
+        android:hint="plus"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:layout_rowSpan="2"
         android:autoSizeTextType="uniform"
-        android:onClick="numberGotClicked"
+        android:onClick="opGotclicked"
 
         />
     <Button
         android:id="@+id/btn1"
         android:text="1"
+        android:hint="1"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -105,6 +116,7 @@
     <Button
         android:id="@+id/btn2"
         android:text="2"
+        android:hint="2"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -114,6 +126,7 @@
     <Button
         android:id="@+id/btn3"
         android:text="3"
+        android:hint="3"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -123,6 +136,8 @@
     <Button
         android:id="@+id/btn0"
         android:text="0"
+        android:hint="0"
+
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -132,6 +147,8 @@
     <Button
         android:id="@+id/btndot"
         android:text="."
+
+        android:hint="."
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:autoSizeTextType="uniform"
@@ -141,11 +158,12 @@
     <Button
         android:id="@+id/btnmin"
         android:text="-"
+        android:hint="min"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:layout_columnSpan="2"
         android:autoSizeTextType="uniform"
-        android:onClick="numberGotClicked"
+        android:onClick="opGotclicked"
 
         />
     <Button
@@ -155,7 +173,7 @@
         android:layout_columnWeight="1"
         android:layout_columnSpan="4"
         android:autoSizeTextType="uniform"
-        android:onClick="numberGotClicked"
+        android:onClick="equalGotClicked"
 
 
         />
