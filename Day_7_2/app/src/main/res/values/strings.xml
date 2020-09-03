@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Day_7_2</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="save">save</string>
+    <string name="delete">delete</string>
+</resources>
